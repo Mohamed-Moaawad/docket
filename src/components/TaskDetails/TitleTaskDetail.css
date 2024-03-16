@@ -1,0 +1,45 @@
+.title-task-details{
+    width: 100%;
+    padding: 40px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.title-task-details .box-input{
+    /* background-color: red; */
+    height: 60px;
+    display: flex;
+    align-items: start;
+}
+
+.title-task-details .box-input input{
+    width: 300px;
+    padding: 4px;
+    height: 100%;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #0092f4;
+}
+
+.title-task-details .box-input input:focus{
+    border: 1px solid #0092f4;
+    border-bottom: 3px solid #0092f4;
+}
+
+.title-task-details .box-input button{
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.title-task-details .box-input button svg{
+    font-size: 25px;
+    color: #0092f4;
+}

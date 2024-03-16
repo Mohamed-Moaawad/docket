@@ -1,0 +1,263 @@
+.home-page{
+    background-color: #fff;
+}
+
+
+
+/*====================
+    start add task 
+======================*/
+.home-page .add-task{
+    position: fixed;
+    top: 0;
+    border: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000031;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page .add-task form{
+    width: 30%;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    animation: show-add-task 1s linear;
+}
+
+@keyframes show-add-task {
+    0%{
+        transform: scale(0);
+        top: 0;
+    }
+    50%{
+        transform: scale(0.7);
+        top: -150px;
+    }
+    100%{
+        transform: scale(1);
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .home-page .add-task form{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:991px){
+    .home-page .add-task form{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:786px){
+    .home-page .add-task form{
+        width: 70%;
+    }
+}
+
+.home-page .add-task form div.form{
+    width: 100%;
+}
+
+
+.home-page .add-task form input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding-left: 12px;
+}
+
+.home-page .add-task form .add-items{
+    width: 100%;
+    display: flex;
+}
+
+.home-page .add-task form .add-items input{
+    width: 80%;
+    padding: 0 12px;
+}
+
+.home-page .add-task form ul{
+    width: 100%;
+}
+
+
+.home-page .add-task form .add-items button{
+    width: 20%;
+    height: 35px;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.home-page .add-task form button.submit{
+    width: 50%;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px 0;
+    margin-top: 15px;
+
+}
+
+.home-page .add-task form .close-add-task{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.home-page .add-task form .close-add-task svg{
+    font-size: 25px;
+}
+/*====================
+    end add task 
+======================*/
+
+.home-page .home-container{
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 1640px){
+    .home-page .home-container{
+        padding-left: 150px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .home-page .home-container{
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .home-page .home-container{
+        padding-left: 0px;
+        /* margin-top: 450px; */
+        margin-top: 250px;
+    }
+}
+@media (min-width: 535px) and (max-width: 540px){
+    .home-page .home-container{
+        margin-top: 550px;
+    }
+}
+@media (max-width: 430px){
+    .home-page .home-container{
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .home-page .home-container{
+        /* margin-top: 650px; */
+        margin-top: 450px;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .home-page .home-container{
+        margin-top: 650px;
+    }
+
+}
+
+
+
+
+.home-page .content{
+    /* margin-left: 150px; */
+    /* padding: 20px 50px; */
+    /* overflow-y: auto; */
+    /* position: absolute; */
+    width: 100%;
+    /* top: 0; */
+}
+
+@media only screen and (max-width: 620px){
+    .home-page .content{
+        padding-bottom: 80px;
+    }
+}
+
+/* @media only screen and (max-width: 620px){
+    .home-page .content{
+        padding-bottom: 20px;
+    }
+} */
+
+.home-page .content .box-filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.home-page .content .box-filters button{
+    width: 140px;
+    padding: 6px;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.home-page .content .box-filters button.active{
+    background-color: #666;
+    box-shadow: inset 0 0 5px 0px #000;
+}
+
+.home-page .content .box-filters select{
+    width: 150px;
+    padding: 6px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px #989898;
+
+}
+
+.home-page .content .box-filters select option{
+    cursor: pointer;
+}
+
+.container-fluid.not-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 523px){
+    .home-page .content .box-filters{
+        gap: 6%;
+    }
+    .home-page .content .box-filters button{
+        width: 47%;
+    }
+    .home-page .content .box-filters select{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
